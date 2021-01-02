@@ -69,12 +69,12 @@ async function handleRequest(request) {
       
       let respon = await fetch(`https://api.cloudflare.com/client/v4/zones/${zoneID}/dns_records/${wwwDnsID}`, init)
       
-      return new Response('Success, DNS updated.' + await respon.text(), {status: 200})
+      return new Response('Success, DNS updated.', {status: 200})
     }   
   
   } catch(err) {
 
-  return new Response('error ' + err, {status: 500})
+  return new Response('Error', {status: 500})
 
 }
 }
