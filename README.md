@@ -1,3 +1,8 @@
+
+### Archived
+
+I do not use cloudflare DNS for my site anymore, so this repository is now archived. It should still work for the foreseeable future however.
+
 # Cloudflare Workers DNS Failover
 Uses cloudflare workers and optionally HetrixTools to change DNS records to a different IP address when the main server goes down. 
 
